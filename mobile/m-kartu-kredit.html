@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../mobile/css/m-style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/fontawesome.min.css">
+    <!-- icon -->
+    <link rel="shortcut icon" href="../assets/img/icon.png">
+
+    <title>Narobil</title>
+  </head>
+
+  <!-- loading -->
+  <div id="loader" class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+
+  <body onload="loading()">
+    
+    <!-- main content -->
+    <main id="content" style="display: none;">
+      <!-- navbar -->
+      <nav class="navbar">
+          <a class="navbar-brand" href="#"><img src="../assets/img/logo-nav.png" alt="Narobil" height="32px"></a>
+      </nav>
+      <!-- end navbar -->
+
+      <div class="container container-data mt-3">
+        <h3 class="judul">Kurban Berkah Bersama Narobil</h3>
+        <div class="row m-0 justify-content-between">
+            <h6 class="sub-judul">Organisasi <span class="d-inline-block text-truncate organisasi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni? Iusto exercitationem eos dolores obcaecati esse ea autem odio, natus consequatur culpa libero ducimus, assumenda doloremque nemo? Doloremque, officiis facere.</span></h6>
+            <a href="#" data-toggle="modal" data-target="#modal-detail" style="line-height: 33px;">Lihat detail</a>
+        </div>
+        <hr class="mt-0">
+        <div class="row m-0 justify-content-between">
+            <h6 class="text-uppercase" style="font-size: 13px;">Total Pembayaran</h6>
+            <p style="font-weight: 600;">Rp 12.003.500</p>
+        </div>
+        <div class="row min-vw-100">
+            <hr class="w-100 my-1" style="border-top: 10px solid #e8e8e8;">
+        </div>
+        <div class="row justify-content-between" style="margin: 20px 0;">
+            <h3 class="mb-0 judul" style="font-size: 16px; margin-top: 3px;">Kartu Kredit</h3>
+            <span>
+                <img class="mr-1" src="../assets/img/visa.png" alt="Visa">
+                <img class="mr-1" src="../assets/img/master-card.png" alt="Master Card">
+                <img src="../assets/img/jcb.png" alt="JCB">
+            </span>        
+        </div>
+        <hr>   
+        <form id="upload" class="needs-validation" action="" method="POST" novalidate>
+            <div class="form-group">
+                <label for="inputNama">Nama Pemilik Kartu</label>
+                <input type="text" class="form-control" id="inputNama" placeholder="Masukkan Nama" aria-describedby="inputNama" required>
+                <div class="invalid-feedback error-msg">
+                    Nama Pemilik Kartu tidak boleh kosong.
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="inputNoKartu">Nomor Kartu Kredit</label>
+              <input type="tel" class="form-control" id="inputNoKartu" placeholder="Masukkan Nomor" aria-describedby="inputNoKartu" required>
+              <div class="invalid-feedback error-msg">
+                  Nomor Kartu Kredit tidak boleh kosong.
+              </div>
+           </div>
+           <div class="row m-0">
+            <div class="form-group bulan">
+              <label for="inputExp">Kadaluarsa</label>
+              <input type="tel" class="form-control" id="inputExp" placeholder="Bulan" maxlength="2" aria-describedby="inputExp" required>
+              <div class="invalid-feedback error-msg">
+                  Bulan tidak boleh kosong.
+              </div>
+          </div>
+          <div class="form-group tahun">
+              <label for="inputExp2"></label>
+              <input type="tel" class="form-control" id="inputExp2" placeholder="Tahun" maxlength="2" aria-describedby="inputExp2" required>
+              <div class="invalid-feedback error-msg">
+                  Tahun tidak boleh kosong.
+              </div>
+          </div>
+            <div class="form-group cvv">
+                <label for="inputCVV">CVV</label>
+                <input type="tel" class="form-control" id="inputCVV" placeholder="3 Angka" aria-describedby="inputCVV" maxlength="3" required>
+                <div class="invalid-feedback error-msg">
+                    CVV tidak boleh kosong.
+                </div>
+            </div>
+           </div>
+           <div class="d-flex justify-content-center mt-5 mb-3 box-btn">
+            <button type="submit" class="btn btn-info btn-submit">Bayar</button>
+           </div>
+          </form>     
+      </div>
+      <!-- modal detail pembayaran -->
+      <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="modal-detail" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Detail Pembayaran</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="../assets/img/ic-close.png" alt="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row m-0 justify-content-between">
+                <p class="text-uppercase">Tagihan</p>
+                <p>Rp 12.000.000</p>
+              </div>
+              <hr class="mt-0">
+              <div class="row m-0 justify-content-between">
+                <p class="text-uppercase">Biaya Admin</p>
+                <p>Rp 3.500</p>
+              </div>
+              <hr class="mt-0">
+              <div class="row m-0 justify-content-between">
+                <p class="m-0 text-uppercase">Total Pembayaran</p>
+                <p class="m-0">Rp 12.003.500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal detail pembayaran -->
+    </main>
+    <!--end main content -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+ $('input,select').val('');
+        $("#inputNoKartu,#inputCVV,#inputExp,#inputExp2").keypress(function(event) {
+        return /\d/.test(String.fromCharCode(event.keyCode));
+      });
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                $('#content').css('padding-bottom','22px');
+                $('footer').css('position','relative');
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+      $('.dd-select').click(function(){
+        $(this).toggleClass('active');
+        $('.dd-options').click(function(){
+          $('.dd-select').removeClass('active');
+        })
+        $('body').click(function (){
+          $('.dd-select').removeClass('active');
+        });
+      });
+
+      //responsive
+      $(window).width();   // returns width of browser viewport
+      $(document).width(); // returns width of HTML document
+
+      $(window).height();   // returns heightof browser viewport
+      $(document).height(); // returns height of HTML document
+
+      var width = $(window).width(); 
+      var height = $(window).height(); 
+      console.log(width);
+      console.log(height);
+      if ((width == 320 && height == 568)) {
+        $('.container-data').css('padding-bottom','25%')
+      }else{
+        $('.container-data').css('padding-bottom','')
+      }
+    </script>
+  </body>
+</html>
