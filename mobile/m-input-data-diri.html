@@ -151,6 +151,10 @@
           });
         }, false);
       })();
+      $("#modal-detail").on("show.bs.modal", function () {
+        $(".modal").animate({ scrollTop: $(document).height() }, 1000);
+        $(".modal").css("overflow", "hidden");
+      });
     </script>
   </body>
 </html>

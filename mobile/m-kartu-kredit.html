@@ -146,10 +146,15 @@
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
-
     <script>
- $('input,select').val('');
-        $("#inputNoKartu,#inputCVV,#inputExp,#inputExp2").keypress(function(event) {
+      $("#modal-detail").on("show.bs.modal", function () {
+        $(".modal").animate({ scrollTop: $(document).height() }, 1000);
+        $(".modal").css("overflow", "hidden");
+      });
+    </script>
+    <script>
+      $('input,select').val('');
+      $("#inputNoKartu,#inputCVV,#inputExp,#inputExp2").keypress(function(event) {
         return /\d/.test(String.fromCharCode(event.keyCode));
       });
       // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -191,8 +196,8 @@
       $(window).height();   // returns heightof browser viewport
       $(document).height(); // returns height of HTML document
 
-      var width = $(window).width(); 
-      var height = $(window).height(); 
+      let width = $(window).width(); 
+      let height = $(window).height(); 
       console.log(width);
       console.log(height);
       if ((width == 320 && height == 568)) {
