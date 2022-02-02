@@ -44,24 +44,59 @@
     </div>
     <div class="container">
       <h3 class="judul" style="font-size: 16px; font-weight: 600;">Kurban Berkah Bersama Narobil</h3>
-      <div class="row m-0 justify-content-between">
-        <h6 class="sub-judul">Organisasi <span class="d-inline-block text-truncate organisasi">Baznas</span></h6>
-        <a href="#" data-toggle="modal" data-target="#modal-detail" style="line-height: 33px;">Lihat detail</a>
+      <div class="row m-0 justify-content-between align-items-center">
+        <h6 class="sub-judul m-0 d-flex">
+          Organisasi
+          <span class="d-inline-block ml-1 text-truncate organisasi">Baznas</span>
+        </h6>
+        <a href="#" data-toggle="modal" data-target="#modal-detail">Lihat detail</a>
       </div>
-      <hr class="mt-1">
+      <hr>
       <div class="row m-0 justify-content-between">
-        <h6 class="text-uppercase" style="font-size: 13px;">Total Pembayaran</h6>
-        <p style="font-weight: 600;">Rp 12.003.500</p>
+        <h6 class="text-uppercase m-0 font-style-total-label" style="font-size: 13px">
+          Total Pembayaran
+        </h6>
+        <p class="m-0 font-style-total">Rp 12.003.500</p>
       </div>
       <div class="row min-vw-100">
-        <hr class="w-100 my-1" style="border-top: 10px solid #e8e8e8;">
+        <hr class="w-100 my-3" style="border-top: 10px solid #e8e8e8" />
       </div>
-      <div class="card card-qris">
-        <p class="mb-0">Scan QR Code menggunakan aplikasi yang mendukung metode pembayaran QRIS</p>
+      <div class="d-flex flex-row justify-content-between align-items-center">
+        <p class="mb-0" style="font-size: 12px; max-width: 60%;">
+          Scan atau download QR Code untuk melakukan pembayaran
+        </p>
+        <a href="../assets/img/img-sample-qris.jpeg" target="_blank" download rel="no-follow" class="btn btn-default btn-download-qr">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <defs>
+              <clipPath id="2yrsjr918a">
+                <path data-name="Rectangle 12058" transform="translate(331 354)" style="fill:none" d="M0 0h24v24H0z"/>
+              </clipPath>
+            </defs>
+            <g data-name="Group 7975" transform="translate(-331 -354)" style="clip-path:url(#2yrsjr918a)">
+              <path class="clip-top" data-name="Path 25860" d="M10.4 15.726a.8.8 0 0 0 1.2 0l5.174-4.991a.894.894 0 0 0-.644-1.488h-2.961V4.891A.879.879 0 0 0 12.3 4H9.7a.879.879 0 0 0-.867.891v4.356H5.869a.894.894 0 0 0-.644 1.488z" transform="translate(332 354)"/>
+              <path class="clip-bottom" data-name="Rectangle 10337" transform="translate(337 372)" d="M0 0h12v2H0z"/>
+            </g>
+          </svg>
+        </a>
       </div>
     </div>
-    <div class="container qris px-0">
-      <img class="img-fluid" src="../assets/img/scan-qris-mobile.png" alt="QRIS">
+    <div class="container qris px-0 mobile">
+      <div class="qris-container">
+        <div class="qris-logo">
+          <img src="../assets/img/logo-QRIS.png" />
+        </div>
+        <div class="qris-logo-gpn">
+          <img src="../assets/img/logo-GPN.png" />
+        </div>
+        <div class="qris-merchant-title">
+          <h3 class="qris-merchant-title">Merchant name</h3>
+          <p class="qris-merchant-nmid">NMID: 001200020012</p>
+        </div>
+        <div class="qris-area qr-mobile">
+          <img src="../assets/img/img-sample-qris.jpeg" class="img-qrcode" />
+        </div>
+        <p class="qris-footer">Dicetak oleh: (Kode NNS)</p>
+      </div>
     </div>
     <!-- modal detail pembayaran -->
     <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="modal-detail"
@@ -71,23 +106,22 @@
           <div class="modal-header">
             <h5 class="modal-title">Detail Pembayaran</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <img src="../assets/img/ic-close.png" alt="Close">
+              <img src="../assets/img/ic-close.svg" alt="Close">
             </button>
           </div>
           <div class="modal-body">
-            <div class="row m-0 justify-content-between">
-              <p class="text-uppercase">Tagihan</p>
-              <p>Rp 12.000.000</p>
+            <div class="row m-0 justify-content-between mb-2">
+              <p class="m-0 text-uppercase">Tagihan</p>
+              <p class="m-0">Rp 12.000.000</p>
             </div>
-            <hr class="mt-0">
-            <div class="row m-0 justify-content-between">
-              <p class="text-uppercase">Biaya Admin</p>
-              <p>Rp 3.500</p>
+            <div class="row mx-0 justify-content-between">
+              <p class="m-0 text-uppercase">Biaya Admin</p>
+              <p class="m-0">Rp 3.500</p>
             </div>
-            <hr class="mt-0">
+            <hr class="dotted" />
             <div class="row m-0 justify-content-between">
               <p class="m-0 text-uppercase">Total Pembayaran</p>
-              <p class="m-0">Rp 12.003.500</p>
+              <p class="m-0 font-style-total">Rp 12.003.500</p>
             </div>
           </div>
         </div>

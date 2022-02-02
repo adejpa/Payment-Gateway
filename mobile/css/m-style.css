@@ -33,6 +33,7 @@ footer p {
   top: 50% !important;
   width: 70px;
   text-align: center;
+  z-index: 9;
 }
 
 .spinner > div {
@@ -490,7 +491,8 @@ a:hover {
 .card-pembayaran span {
   margin-top: -3px;
 }
-#id-tagihan2 {
+#id-tagihan2,
+.input-tagihan {
   border: none;
   font-size: 14px;
   font-weight: normal;
@@ -501,7 +503,8 @@ a:hover {
   color: #333333;
   text-align: end;
 }
-input#id-tagihan2:focus {
+input#id-tagihan2:focus,
+input.input-tagihan:focus {
   outline: none;
 }
 .btn-salin img {
@@ -526,7 +529,8 @@ input#id-tagihan2:focus {
   width: 55%;
   padding: 10px 0;
 }
-.remainingTime {
+.remainingTime,
+#remainingTime {
   color: #fff;
 }
 .timer {
